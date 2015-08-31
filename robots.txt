@@ -1,0 +1,5 @@
+# For domain: http://www.orca-music.com
+
+User-agent: *
+Disallow: /cue_tracker/
+Disallow: /mycloud/
