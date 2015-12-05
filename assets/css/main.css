@@ -78,9 +78,23 @@ h4,
 	height: 150%;
 }
 
-.social-sprite-img { background: url("../img/social.png?v=101413") no-repeat }
+.social-links {
+	background-image: url("../img/social-links.png?v=120515");
+	width: 64px;
+	height: 64px;
+	display: block;
+	margin: 5px auto;
+}
 
-.social-32 {
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+	.social-links {
+		 background-image: url("../img/social-links-retina.png?v=120515");
+		 background-size: 384px 64px;
+	}
+}
+
+.social-mini { 
+	background: url("../img/social-mini.png?v=120515") no-repeat;
 	width: 32px;
 	height: 32px;
 	float: left;
@@ -90,36 +104,19 @@ h4,
 	font-size: 0;
 }
 
-.social-64 {
-	width: 64px;
-	height: 64px;
-	display: block;
-	margin: 5px auto;
-}
-
-.imdb-32 { background-position: 0 -84px }
-
+.imdb-32 { background-position: -96px 0 }
 .email-32 { background-position: 0 0 }
+.github-32 { background-position: -64px 0 }
+.linkedin-32 { background-position: -128px 0 }
+.facebook-32 { background-position: -32px 0 }
+.soundcloud-32 { background-position: -160px 0 }
 
-.github-32 { background-position: 0 -168px }
-
-.linkedin-32 { background-position: 0 -42px }
-
-.facebook-32 { background-position: 0 -126px }
-
-.soundcloud-32 { background-position: 0 -210px }
-
-.imdb-64 { background-position: 0 -402px }
-
-.email-64 { background-position: 0 -254px }
-
-.github-64 { background-position: 0 -550px }
-
-.linkedin-64 { background-position: 0 -328px }
-
-.facebook-64 { background-position: 0 -476px }
-
-.soundcloud-64 { background-position: 0 -624px }
+.imdb-64 { background-position: -128px 0 }
+.email-64 { background-position: -256px 0 }
+.github-64 { background-position: -320px 0 }
+.linkedin-64 { background-position: -64px 0 }
+.facebook-64 { background-position: -192px 0 }
+.soundcloud-64 { background-position: 0 0 }
 
 .poster {
 	width: 94px;
