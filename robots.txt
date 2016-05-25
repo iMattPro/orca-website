@@ -3,3 +3,4 @@
 User-agent: *
 Disallow: /cue_tracker/
 Disallow: /mycloud/
+Disallow: /public_files/
