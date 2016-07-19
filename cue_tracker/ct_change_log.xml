@@ -1,0 +1,443 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="assets/xml-stylesheet.css"?>
+<document>
+
+	<revision>
+		<version>10.0.15</version>
+		<date>July 23, 2014</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.15.zip</link>
+		<log>
+			<change>Fixed an issue that could crash on imports during cue conform and compare operations.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.14</version>
+		<date>Jan 23, 2014</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.14.zip</link>
+		<log>
+			<change>Added a new option "Export Spotting" to the File Menu.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.13</version>
+		<date>Mar 12, 2013</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.13.zip</link>
+		<log>
+			<change>Added a Bar Start # field (replaces the unused Clicks for free field).</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.12</version>
+		<date>Jan 30, 2013</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.12.zip</link>
+		<log>
+			<change>Added option to lock the Hour Override value as a default for automatic entry in newly created cues.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.11</version>
+		<date>Jan 29, 2013</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.11.zip</link>
+		<log>
+			<change>Include Start and Finish timecode in Cue Sheet Exports.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.10</version>
+		<date>Nov 30, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.10.zip</link>
+		<log>
+			<change>Correctly handle Midi start time hours and minutes during Auto Conforms.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.9</version>
+		<date>Nov 25, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.9.zip</link>
+		<log>
+			<change>Show an error message when trying to create new cues before a project frame rate has been selected.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.8</version>
+		<date>Nov 25, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.8.zip</link>
+		<log>
+			<fix>Use the correct Timing Summary (Entire Project) at the end of the Composer's Spotting Chart when outputting in PDF format.</fix>
+			<fix>Use the term "Unassigned" in print outs/PDFs in cases where empty/unassigned usages may be present.</fix>
+			<change>Automatically name all documents in the Spotting Notes column of the Printing section when outputting in PDF format.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.7</version>
+		<date>Nov 18, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.7.zip</link>
+		<log>
+			<fix>When auto-conforming, any cues using the Hour Override option will get their new MIDI start time hour from the override value instead of the cue number.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.6</version>
+		<date>Nov 15, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.6.zip</link>
+		<log>
+			<fix>Fixed a critical compatibility issue with Pro Tools 10 session info text file imports.</fix>
+			<fix>Fixed an issue where sorting by TC start time did not always work.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.5</version>
+		<date>June 12, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.5.zip</link>
+		<log>
+			<change>When opening, Cue Tracker will only go to the last viewed layout if it is a main layout page.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.4</version>
+		<date>May 14, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.4.zip</link>
+		<log>
+			<change>Certain pages, such as Status page, no longer resize to full-screen to avoid problems on some systems in which the window disappears from the monitor.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.3</version>
+		<date>January 15, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.3.zip</link>
+		<log>
+			<change>Updated links to Cue Tracker materials at Orca-Music.com</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.2</version>
+		<date>January 9, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.2.zip</link>
+		<log>
+			<change>When saving Composer/MX Editor/Producer Charts as PDF files, you will be prompted if you want the Timing Summary information added to the end of the PDF file.</change>
+			<change>Updated the appearance of the Quick Edit layout to match the rest of the new Cue Tracker v10 theme.</change>
+			<change>In case of timing input error resulting in a negative Cue length, the duration will now appear in red or as “Invalid” to highlight the error, depending on the layout being viewed or printed.</change>
+			<change>Changed the language on all spotting notes printouts - “Music Amount” has been changed to “Music in this Reel” (or Act, depending on the mode selected).</change>
+			<change>Removed some unnecessary menu items from the menubar.</change>
+			<change>When deleting a Cue, the warning message will now refer to the Cue Number you are attempting to delete.</change>
+			<fix>Added an "Exit" button to the page displayed when errors are found during the "Compare" part of the "Auto Conform" process, to prevent getting stuck on that page.</fix>
+			<fix>When starting a new project, hitting the Return key in the Project Name field will behave like the Enter key - it will exit the field rather than create a new line.</fix>
+			<fix>Fixed a typo error on the Spotting Notes and Timing Summary print layouts.</fix>
+			<fix>Fixed some cosmetic issues with the positioning of some buttons.</fix>
+			<fix>Fixed an issue where in some cases the Cue Sheet, Cue Spotting or Cue Timing links in the Main Menu column would not correctly hilight to indicate the current active Display screen.</fix>
+			<fix>Center aligned the Cue Sheet data entry fields section.</fix>
+			<fix>Made the Current Found Set status on the Printing page display red instead of gray (when no cues are found, or the cues are unsorted), so it is more readable against the blue background.</fix>
+			<fix>The Quick Timing popup window now requires there be at least one Cue created before it will display anything.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0.1</version>
+		<date>January 2, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.1.zip</link>
+		<log>
+			<change>Cleaned up the appearance of the Printing layout significantly.</change>
+			<change>Added warning messages to print options that will print based on the current “found set”.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>10.0</version>
+		<date>January 1, 2012</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.zip</link>
+		<log>
+			<change>Redesigned user interface.</change>
+			<change>Status Chart has “Collapsed” and “Expanded” viewing modes. The “Expanded” mode reveals Status Notes and the Status Notes Log inline with each Cue.</change>
+			<change>Status Chart has has been tweaked when printing to provide more room for the Notes field by 15%.</change>
+			<change>Moved the “Import Cues” function to the Project Info page.</change>
+			<change>Updated the color palette with softer colors.</change>
+			<fix>Cue Sheet: When exporting to a file, all listed writers and publishers will be correctly exported.</fix>
+			<fix>Cue Split and Duplicate: Related data from the Cue Timings and Status Logs are now correctly handled during these processes.</fix>
+			<fix>IMDB button: Will now behave correctly, asking you to enter an URL if one does not exist, or taking you to the web page if the URL has been set. Also added an option-click to change the URL after one has alredy been set.</fix>
+			<fix>General bug fixes and improvements.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.5.2</version>
+		<date>November 26, 2011</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_9.5.2.zip</link>
+		<log>
+			<change>Beautified the progress bars that appear on the Studio Take Log and Studio Record Order pages.</change>
+			<fix>When printing a "Full Take-log" all takes are now sorted in the order they were created instead of by the Take number itself. This allows total flexibility of how you want to number your Takes without running into strange sorting issues when printing Take logs.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.5.1</version>
+		<date>November 16, 2011</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_9.5.1.zip</link>
+		<log>
+			<change>Name change - now known as CUE TRACKER.</change>
+			<change>New start-up screen to go with the new name and version update.</change>
+			<change>"SCORE" status will be guessed when changing the Usage (FM Pro 10+ only).</change>
+			<change>Modified the look of the traditional Spotting Notes and Timing Summary printout pages.</change>
+			<change>Tweaked the layout of the "Session/Record Order" Chart/Printouts to give more room to the Session Notes field. Text will also shrink to fit this field if it exceeds the borders of the field area.</change>
+			<change>Added the "Copy Status Notes to Session Notes" function to the Edit Menu.</change>
+			<fix>Fixed a bug on the Session/Record Order Charts where the highlighted row's color would appear on printed outputs.</fix>
+			<fix>Fixed some minor bugs.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.4.5</version>
+		<date>April 9, 2011</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<change>Traditional spotting notes page will now slide spotting notes up if there are no In or Out shot descriptions.</change>
+			<change>Added Old version and New version fields to each entry in the conform notes.</change>
+			<change>Added the Cue Number to the Status page when hovering the mouse over checkboxes.</change>
+			<change>Removed unnecessary titles from the Utilities and Contacts pages.</change>
+			<fix>Adjusted CD Tray print alignment.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.4.4</version>
+		<date>April 6, 2011</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<change>MIDI Start Time field: colons now optional during entry, are added automatically (FM Pro 10+ only).</change>
+			<change>Added Starts and Time to each Reel/Act sub-heading on Composers and MX Editors Charts.</change>
+			<change>Added new options to File menu: Manage (Admin only), File Options, Save a Copy As.</change>
+			<change>Removed the "Speech" option from Utilities. This was an obsolete feature.</change>
+			<change>Moved the timecode hour override option out of Utilities and onto the Cue Info page.</change>
+			<change>Moved the option to use "Reels" or "Acts" out of Utilities and onto the Home page.</change>
+			<change>Added an "Auto-Jump to Next TC Field" on/off option in Utilities for tab-less timecode entry. Your setting of this option will also be stored as a personal preference to your account.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.4.3</version>
+		<date>March 8, 2011</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>New SCORE tracking system. Instead of assigning SCORE as a usage, there is a new button to toggle each cue between SCORE or OTHER. This allows the usages to be correctly assigned, the program no longer relies on assigning a usage of SCORE to track which cues are to be composed versus which are not composer's cues.</new>
+			<new>Quick Timing feature added to the Layouts menu. Quickly shows total Score and Non-Score starts and total time in a pop-up window.</new>
+			<change>Add Usages to the Music Used print-out page.</change>
+			<change>Add Usage Notes and Performer to the export data when exporting cuesheet info.</change>
+			<change>Current Music Cue List will now print the current found set, instead of being limited to just printing all cues.</change>
+			<change>Added an error beep notification to the printing page when clicking Print or PDF when no document type is selected.</change>
+			<change>Added more Usages to the Usages list.</change>
+			<change>In FM PRo 10 and later, revert back to showing the Status area as a default.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.4.2</version>
+		<date>February 21, 2011</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<change>Updated the methods used for row highlighting on the Status and Studio pages to work with new FM Pro 10 and 11 features. Note this has deprecated row highlighting in FM Pro 9 and earlier.</change>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.4.1</version>
+		<date>February 21, 2011</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>Added a "Check for Updates" feature to the Help and About menus.</new>
+			<change>In Studio page, Time Completed/Remaining progress bar and data is retained correctly.</change>
+			<fix>In Studio page, Session 1 To Do active item was green and bold. It is no longer green so it will match the appearance of the active cue in Session 2 and Session 3 To Do lists.</fix>
+			<fix>Removed the ordering numbers from the Record Order chart view, since they no longer worked with the current layout of the Record Order chart view.</fix>
+			<fix>Fixed an issue with the Search feature that occurred when using FM Pro 10 or later.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.4</version>
+		<date>January 27, 2011</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>Added a button to Session Order page that can copy data from Status notes into the Session Order notes, for all cues in the session order list, or just the current cue.</new>
+			<change>Renamed program to Film Cue Tracker.</change>
+			<change>Created a new Splash Screen image to reflect the new name change.</change>
+			<change>Omitted cues will no longer be displayed in the Go To Cue drop-down menu.</change>
+			<change>Cue Sheets will no longer include omitted cues in the print outs.</change>
+			<change>Cue Slider buttons now have an embossed button look to them.</change>
+			<change>Changed tab-order for entering Artists data on cuesheet page to correct order.</change>
+			<change>Each Composer and Publisher on Cuesheet printout is now listed on a new line.</change>
+			<change>Readjusted some of the widths of the Cuesheet printout columns.</change>
+			<change>Added option to toggle the Status Toolbar from the View Menu.</change>
+			<fix>Print button on Cuesheet page will now open print dialog instead of Preview mode.</fix>
+			<fix>Fixed issues where you could get stuck in preview mode in FM Pro 10 or later by turning the Status Area back on during Preview mode.</fix>
+			<fix>Fixed issues in FM Pro 10 or later where you are not returned to the proper Cue Timings "tab" when using the print functions.</fix>
+			<fix>Fixed Verdana Bold/Italics and Arial Bold/Italics issues introduced in Leopard.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.3.6</version>
+		<date>April 19, 2010</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<change>Added next/prev cue buttons to Utilities page for the "Set cue hour to:" feature</change>
+			<fix>Added automatic window resizing when navigating to the Conform pages</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.3.5</version>
+		<date>April 8, 2010</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>Added ability to define the timecode hour independent of the Cue Number for Acts/Reels</new>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.3.4</version>
+		<date>April 3, 2010</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>Added a button in Cue Info to copy the spotted start time to the MIDI start time</new>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.3.3</version>
+		<date>Nov 3, 2009</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<change>FileMaker Pro v10 Compatibility (Switched from EventScript plugin to Script Triggers,  maintained backwards compatibility.)</change>
+			<change>Status bar now defaults to hidden in FM Pro 10 (looks better without it).</change>
+			<new>Improved time-code field entry with auto-jump to next field (FM Pro 10 only).</new>
+			<fix>Few minor appearance tweaks and update of copyright for 2010.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.3.2</version>
+		<date>Nov 2, 2009</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<change>Replaced Aqua style buttons on Home and Utilities pages with Filemaker style buttons.</change>
+			<fix>Fixed layout graphic issues on Status page when resizing the window.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.3.1</version>
+		<date>Aug 7, 2009</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>Added 'To Do' and 'Done' cue tracking for record order progress in the Take-Log.</new>
+			<new>Added active row hi-lighting to the Session Order Progress Chart view.</new>
+			<new>Added a "View" button to Sessions page in Studio tab to view the Record Order Chart.</new>
+			<new>Added View Track-sheet Template to "Layouts" menu and Command-Shift-6 quick-key command.</new>
+			<new>Updated Auto Conform process with a new page and clear step by step instructions.</new>
+			<new>Added a Results Confirmation page to the conform process to inspect what was/wasn't conformed.</new>
+			<new>Added a button to print a cue's version history log on the Cue Info page.</new>
+			<new>Added a button to hide cues from the Conform Log page.</new>
+			<new>Added Enable Alert toggle to Home page to popup the NotePad's text in an alert dialog on launch.</new>
+			<change>Added new "Conformer" button to menu bar and menu lists.</change>
+			<change>Removed the "Online" section of the program due to lack of usefulness.</change>
+			<change>Upgraded Studio section's progress bars with a new and colorful appearance.</change>
+			<change>Added color hi-light to active Session Order selection buttons in Take-Log.</change>
+			<change>Studio Sessions Page - Clicking Print icon leads directly to print dialog and Option-clicking the Print icon saves session record order chart as PDF.</change>
+			<change>Replaced Studio "Cues Done" progress bar with a nicer full color version.</change>
+			<change>Replaced Session Record Order page layouts with one universal page layout.</change>
+			<change>Updated the Auto Conform Help page.</change>
+			<change>New Splash Screen image.</change>
+			<change>Removed display of Project Version from Cue Pix Version field on Cue Spotting Page.</change>
+			<change>Changed naming of "Join Cues" function to "Merge Cues".</change>
+			<fix>Corrected some color issues on Cue Info Layout for tabs and buttons.</fix>
+			<fix>Adjusted some text alignment issues on Take-Log printout of entire project.</fix>
+			<fix>Fixed display of Session Assignments in the footer of the Take-Log page.</fix>
+			<fix>Found and fixed some more ways where Import Cues menu item should be error protected.</fix>
+			<fix>Removed some redundant Studio section tool tips.</fix>
+			<fix>Resized 'clix for free' and 'tempo' fields on Take Log page.</fix>
+			<fix>Updated footer of Session Order print page to credit ilm Score Tracker</fix>
+			<fix>Removed deprecated scripts and fields.</fix>
+			<fix>Conform Test operation now sorts the results by Cue Number</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.2</version>
+		<date></date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>Added support for 23.976 frame rate</new>
+			<new>Added selected row highlight to Status and Studio Sessions List views</new>
+			<new>Added running totals to footer of Status page for each Checkbox column with one-click searching and sorting ability</new>
+			<new>Updated all "Print" buttons with option-click ability to instantly save as PDF</new>
+			<change>Added mouse-over tooltips to Status Page check box columns and headers</change>
+			<change>Changed Status Page check box column headers to drop down list instead of pull down menu</change>
+			<change>Resized Pix Version and Midi Sequence Start time columns on Status Page</change>
+			<change>Added Option-Click ability to delete Status Log entries</change>
+			<change>Changed default picture version color "white" to clear instead of opaque white</change>
+			<change>Added new clarification labels to the Status Checkbox Set Up in Utilities</change>
+			<change>Made notes to user on Printing page more obvious with colored text and GUI</change>
+			<change>Status and Sessions pages now stretch with window if resized to larger width</change>
+			<fix>Clear Status Check Boxes truly clears them instead of inserting a blank space</fix>
+			<fix>Status Check Boxes Menu's 'empty' option changed from blank space to zero character</fix>
+			<fix>Fixed all coloring containers on Status page to avoid potential user errors</fix>
+			<fix>Fixed potential preview-escape bug from Cuesheet Print preview.</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.1.3</version>
+		<date></date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>Added Import Cues feature to import Cue Numbers, Start and Finish times from a Pro Tools Session Text File</new>
+			<new>On newly created projects, the frame rate options is colored Yellow to stand out and alert the user to set a frame rate before continuing.</new>
+			<fix>Re-aligned graphic for Check boxes (GUI bug)</fix>
+			<fix>Removed unnecessary Dialog windows from the Auto-Conform process</fix>
+			<fix>Add Sort capability to column headers on Status Page (Title, Cue Num, etc.)</fix>
+		</log>
+	</revision>
+
+	<revision>
+		<version>9.0</version>
+		<date></date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip</link>
+		<log>
+			<new>Redesigned opening splash/about screen.</new>
+			<new>Redesigned Status page</new>
+			<new>Status Notes archive system - store up to 6 status note entries per cue</new>
+			<new>Added color-tagging to Priority/Alert Status (ie: Ready=green, Omitted=black, Immediate=red)</new>
+			<new>Omit Cue System. Omit a cue and it stays omitted and hidden from all lists until Restored</new>
+			<new>Revised document footer to display a record's last modification by Username and Date</new>
+			<fix>Old Omit Cue command renamed to Hide Cue - temporarily omits until next sort or show command</fix>
+			<fix>Auto-resizing of fonts on Status page print-outs to always fit in the box area</fix>
+			<fix>Added warning Beep alerts to important buttons and dialog boxes</fix>
+			<fix>Exit button on Track-sheet pages now correctly take you to your last visited layout</fix>
+			<fix>Added Clear and Exit buttons to the Track-sheet Template page</fix>
+			<fix>Corrected Track-sheet Print Options to properly include all Score cues if selected</fix>
+			<fix>Fixed or added some tool tips that were wrong or missing</fix>
+			<fix>Secured color palette in Utilities so colors can not be accidentally erased</fix>
+			<fix>Changed Online menu to a sub-menu for direct access to the iDisk, WWW and FTP layouts</fix>
+			<fix>Corrected the design of Bookmark buttons on WWW page</fix>
+			<fix>Find results are now automatically sorted by cue number</fix>
+			<fix>Enabled command-P Print in File Menu function for all display pages</fix>
+			<fix>Moved WWW Bookmark editor into a new popup window</fix>
+			<fix>Disabled the Splash Screen display when closing the file</fix>
+			<fix>Added Quick-key Command-Shift-S for the 'Show Score' function</fix>
+			<fix>Fixed 'About ilm Score Tracker' window so it won't lock up the program in certain instances</fix>
+			<fix>Compacted and Optimized database file</fix>
+		</log>
+	</revision>
+
+</document>
