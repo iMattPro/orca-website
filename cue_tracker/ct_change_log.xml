@@ -3,6 +3,20 @@
 <document>
 
 	<revision>
+		<version>12.0</version>
+		<date>Aug 14, 2017</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.0.zip</link>
+		<log>
+			<change>Converted for FileMaker Pro 12. Not compatible with earlier versions of FileMaker Pro.</change>
+			<change>Changed the Cue Number to a number field to allow proper sorting when using 1m1, 1m2 cue number style.</change>
+			<change>Changed how the Merge Cue dialog works, instead of "Prev"/"Next" buttons, the cues it can merge with are now named in the buttons.</change>
+			<fix>No more garbage CLIP NAME cues created after using the Import Cues feature.</fix>
+			<fix>Fixed display issues when using FileMaker Pro 12 or newer.</fix>
+			<fix>Delete Cue dialog was incorrectly titled "Delete Take".</fix>
+		</log>
+	</revision>
+
+	<revision>
 		<version>10.0.15</version>
 		<date>July 23, 2014</date>
 		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.15.zip</link>
