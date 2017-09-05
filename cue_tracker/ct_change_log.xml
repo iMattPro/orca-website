@@ -3,6 +3,16 @@
 <document>
 
 	<revision>
+		<version>12.1</version>
+		<date>Sep 5, 2017</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.1.zip</link>
+		<log>
+			<change>Reverted Cue Numbering back to original format (1m01) due to sorting problems with more complex cue numbers, such as ranges and a/b formats.</change>
+			<change>Redesigned Cue Conformer around new Card/Modal user interface system.</change>
+		</log>
+	</revision>
+
+	<revision>
 		<version>12.0</version>
 		<date>Aug 14, 2017</date>
 		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.0.zip</link>
