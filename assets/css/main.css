@@ -128,56 +128,14 @@ h4,
 
 .footer {
 	background-color: #1d1f23;
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
-.footer .coppyright {
-	margin-top: 10px;
-	display: block;
-}
-
-.footer .logo-vt p {
+.footer p {
 	padding: 0;
 	margin: 0;
 	font-size: 12px;
 }
-
-.nav-list .nav-header {
-	text-shadow: none;
-	text-transform: lowercase;
-	text-transform: capitalize;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 400;
-}
-
-.footer .nav-list > li > a {
-	text-shadow: none;
-	color: #8dd1ff;
-}
-
-.footer .nav-list > li > a:hover {
-	background: none;
-	color: #08C;
-}
-
-.footer .nav-list > li > a > i.linkedin,
-.footer .nav-list > li > a > i.facebook,
-.footer .nav-list > li > a > i.imdb,
-.footer .nav-list > li > a > i.email {
-	height: 18px;
-	width: 16px;
-	float: left;
-	margin-right: 5px;
-}
-
-.footer .nav-list > li > a > i.facebook { background-position: left -76px }
-
-.footer .nav-list > li > a > i.linkedin { background-position: left -50px }
-
-.footer .nav-list > li > a > i.imdb { background-position: left -24px }
-
-.footer .nav-list > li > a > i.email { background-position: left 2px }
 
 /* ----- jCarousel style -----
    ================================================== */
