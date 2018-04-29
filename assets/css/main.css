@@ -86,15 +86,8 @@ h4,
 	margin: 5px auto;
 }
 
-@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-	.social-links {
-		 background-image: url("../img/social-links-retina.png?v=120515");
-		 background-size: 384px 64px;
-	}
-}
-
-.social-mini { 
-	background: url("../img/social-mini.png?v=120515") no-repeat;
+.social-mini {
+	background: url("../img/social-mini.png?v=042918") no-repeat;
 	width: 32px;
 	height: 32px;
 	float: left;
@@ -104,12 +97,24 @@ h4,
 	font-size: 0;
 }
 
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+	.social-links {
+		 background-image: url("../img/social-links-retina.png?v=120515");
+		 background-size: 384px 64px;
+	}
+
+	.social-mini {
+		background-image: url("../img/social-mini-retina.png?v=042918");
+		background-size: 192px 32px;
+	}
+}
+
 .imdb-32 { background-position: -96px 0 }
-.email-32 { background-position: 0 0 }
-.github-32 { background-position: -64px 0 }
-.linkedin-32 { background-position: -128px 0 }
-.facebook-32 { background-position: -32px 0 }
-.soundcloud-32 { background-position: -160px 0 }
+.email-32 { background-position: -64px 0 }
+.github-32 { background-position: -128px 0 }
+.linkedin-32 { background-position: -32px 0 }
+.facebook-32 { background-position: -160px 0 }
+.soundcloud-32 { background-position: 0 0 }
 
 .imdb-64 { background-position: -128px 0 }
 .email-64 { background-position: -256px 0 }
