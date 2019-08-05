@@ -3,6 +3,15 @@
 <document>
 
 	<revision>
+		<version>12.1.1</version>
+		<date>Jul 14, 2019</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.1.1.zip</link>
+		<log>
+			<fix>Ensure new and/or reset Cue Tracker files will not show an "errors detected" message in the Cue Conformer before it has been run.</fix>
+		</log>
+	</revision>
+
+	<revision>
 		<version>12.1</version>
 		<date>Sep 5, 2017</date>
 		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.1.zip</link>
@@ -17,7 +26,7 @@
 		<date>Aug 14, 2017</date>
 		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.0.zip</link>
 		<log>
-			<change>Converted for FileMaker Pro 12. Not compatible with earlier versions of FileMaker Pro.</change>
+			<change>Converted for FileMaker Pro 12. No longer compatible with earlier versions of FileMaker Pro.</change>
 			<change>Changed the Cue Number to a number field to allow proper sorting when using 1m1, 1m2 cue number style.</change>
 			<change>Changed how the Merge Cue dialog works, instead of "Prev"/"Next" buttons, the cues it can merge with are now named in the buttons.</change>
 			<fix>No more garbage CLIP NAME cues created after using the Import Cues feature.</fix>
