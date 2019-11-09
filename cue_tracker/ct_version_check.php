@@ -124,7 +124,7 @@ function display($text)
 <h1>Cue Tracker</h1>
 <?php if ($changes): ?>
 	<p>There is a new version available. You are currently using version <strong><?= $version ?></strong>.</p>
-	<p><a href="<?= $xml->revision[0]->link ?>">Click here</a> to download version
+	<p><a target="_blank" href="<?= $xml->revision[0]->link ?>">Click here</a> to download version
 		<strong><?= $xml->revision[0]->version ?></strong>.</p>
 	<hr/>
 	<ul style="text-align:left;"><?= $changes ?></ul>
