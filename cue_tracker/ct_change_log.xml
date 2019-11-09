@@ -3,6 +3,17 @@
 <document>
 
 	<revision>
+		<version>12.2</version>
+		<date>Nov 8, 2019</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.2.zip</link>
+		<log>
+			<new>Added “Export to Conformalizer” menu action.</new>
+			<change>Now “Export Spotting” will export fully formatted time code.</change>
+			<change>“Conformer” and “Import Cues” can now import tab separated database files formatted for Conformalizer as well as Pro Tools Session files.</change>
+		</log>
+	</revision>
+
+	<revision>
 		<version>12.1.1</version>
 		<date>Jul 14, 2019</date>
 		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.1.1.zip</link>
