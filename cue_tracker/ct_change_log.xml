@@ -3,6 +3,16 @@
 <document>
 
 	<revision>
+		<version>12.2.1</version>
+		<date>Nov 12, 2019</date>
+		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.2.1.zip</link>
+		<log>
+			<new>Added an alert window indicating when importing cues is complete.</new>
+			<fix>Fixed issues with conformer not returning to proper layouts and not showing records after Compare or closing Conformer window.</fix>
+		</log>
+	</revision>
+
+	<revision>
 		<version>12.2</version>
 		<date>Nov 8, 2019</date>
 		<link>http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.2.zip</link>
