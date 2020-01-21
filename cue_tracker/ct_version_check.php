@@ -33,7 +33,7 @@ function makeList($input, $type)
 	$output = '';
 	if (isset($input)) {
 		foreach ($input as $value) {
-			$output .= '<li> [' . $type . '] ' . display($value) . '</li>';
+			$output .= '<li> <span class="badge badge-' . strtolower($type) . '">' . $type . '</span> ' . display($value) . '</li>';
 		}
 	}
 	return $output;
@@ -118,6 +118,35 @@ function display($text)
 			font-size: 0.6em;
 		}
 
+		.badge {
+			display: inline-block;
+			padding: .25em .4em;
+			font-size: 75%;
+			font-weight: 700;
+			line-height: 1;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: baseline;
+			border-radius: .25rem;
+			text-shadow: none;
+			font-family: "Helvetica Neue", Arial, sans-serif;
+		}
+
+		.badge-new {
+			color: #fff;
+			background-color: #28a745;
+		}
+
+		.badge-change {
+			color: #212529;
+			background-color: #ffc107;
+		}
+
+		.badge-fix {
+			color: #fff;
+			background-color: #007bff;
+		}
+
 	</style>
 </head>
 <body>
@@ -130,7 +159,7 @@ function display($text)
 	<ul style="text-align:left;"><?= $changes ?></ul>
 <?php else: ?>
 	<p>You are using the most up to date version. There are no new updates.</p>
-	<img src="assets/daftpunktocat-thomas.gif" width="300" height="300" alt=""/>
+	<img src="assets/daftpunktocat-thomas.gif" style="width:300px; height:300px;" alt=""/>
 <?php endif; ?>
 </body>
 </html>
