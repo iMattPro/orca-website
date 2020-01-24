@@ -159,7 +159,7 @@ function display($text)
 	<ul style="text-align:left;"><?= $changes ?></ul>
 <?php else: ?>
 	<p>You are using the most up to date version. There are no new updates.</p>
-	<img src="assets/daftpunktocat-thomas.gif" style="width:300px; height:300px;" alt=""/>
+	<img src="assets/thumbs-up-2.png" alt=""/>
 <?php endif; ?>
 </body>
 </html>
