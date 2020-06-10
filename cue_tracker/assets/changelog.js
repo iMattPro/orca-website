@@ -20,11 +20,14 @@
 			}
 		});
 		if (items.length) {
-			$(".new-version").text(data.revision[0].version)
-			$("#version").text(version);
-			$("#download").attr("href", data.revision[0].link);
 			$("#changes").html(items.join(""));
 			$("#changelist").show();
+			$("#download").attr("href", data.revision[0].link);
+			$(".new-version").text(data.revision[0].version);
+			if (version) {
+				$("#current-version").show();
+				$("#version").text(version);
+			}
 		} else {
 			$("#up-to-date").show();
 		}
