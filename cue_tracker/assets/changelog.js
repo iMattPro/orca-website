@@ -12,7 +12,7 @@
 		let items = [];
 		$.each(data.revision, function(key, revision) {
 			if (versionCompare(version, revision.version) < 0) {
-				let changes = '<li class="version"><h2>' + revision.version + ' <span class="date">[ ' + revision.date + ' ]</span></h2></li>';
+				let changes = '<li class="version"><h2>' + revision.version + (revision.date.length ? ' <span class="date">[ ' + revision.date + ' ]</span>' : '') + '</h2></li>';
 				changes = changes + makeList(revision.log.new, 'New');
 				changes = changes + makeList(revision.log.change, 'Change');
 				changes = changes + makeList(revision.log.fix, 'Fix');
@@ -20,8 +20,8 @@
 			}
 		});
 		if (items.length) {
+			$(".new-version").text(data.revision[0].version)
 			$("#version").text(version);
-			$("#currentVersion").text(data.revision[0].version)
 			$("#download").attr("href", data.revision[0].link);
 			$("#changes").html(items.join(""));
 			$("#changelist").show();
@@ -30,6 +30,28 @@
 		}
 	});
 
+	/**
+	 * Format changelog data into list elements
+	 *
+	 * @param {object} input An array object of changelog data
+	 * @param {string} type The changelog format (new|fix|change)
+	 */
+	function makeList(input, type) {
+		let output = '';
+		if (input !== undefined) {
+			for (let i = 0; i < input.length; i++) {
+				output = output + '<li> <span class="badge badge-' + type.toLowerCase() + '">' + type + '</span> ' + input[i] + '</li>';
+			}
+		}
+		return output;
+	}
+
+	/**
+	 * Get a specified URL parameter's value
+	 *
+	 * @param {string} sParam The URL parameter to check
+	 * @return {string|boolean} Parameter's value or false
+	 */
 	function GetURLParameter(sParam) {
 		let sPageURL = window.location.search.substring(1);
 		let sURLVariables = sPageURL.split('&');
@@ -41,22 +63,6 @@
 		}
 		return false;
 	}
-
-	function makeList(input, type) {
-		let output = '';
-		if (input !== undefined) {
-			for (let i = 0; i < input.length; i++) {
-				output = output + '<li> <span class="badge badge-' + type.toLowerCase() + '">' + type + '</span> ' + input[i] + '</li>';
-			}
-		}
-		return output;
-	}
-
-	// function decodeEntities(encodedString) {
-	// 	var textArea = document.createElement('textarea');
-	// 	textArea.innerHTML = encodedString;
-	// 	return textArea.value;
-	// }
 
 	/**
 	 * Compares two software version numbers (e.g. "1.7.1" or "1.2b").
