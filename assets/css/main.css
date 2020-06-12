@@ -25,7 +25,7 @@ h1,
 h2,
 h3,
 h4,
-.footer { font-family: 'Nunito', Helvetica, Arial, sans-serif }
+footer { font-family: 'Nunito', Helvetica, Arial, sans-serif }
 
 .container { max-width: 970px; }
 
@@ -131,12 +131,12 @@ h4,
 /* ----- start footer -----
    ================================================== */
 
-.footer {
+footer {
 	background-color: #1d1f23;
 	padding: 40px 0;
 }
 
-.footer p {
+footer p {
 	padding: 0;
 	margin: 0;
 	font-size: 12px;

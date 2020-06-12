@@ -101,3 +101,5 @@ $(document).ready(function() {
 	});
 
 });
+
+$('.copyYear').append(' - ' + (new Date).getFullYear());
