@@ -19,7 +19,7 @@
           "Added an alert window indicating when importing cues is complete."
         ],
         "fix": [
-          "Fixed issues with conformer not returning to proper layouts and not showing records after Compare or closing Conformer window."
+          "Fixed issues with Conformer not returning to proper layouts and not showing records after Compare or closing Conformer window."
         ]
       }
     },
@@ -301,7 +301,7 @@
     {
       "version": "9.4.5",
       "date": "April 9, 2011",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "change": [
           "Traditional spotting notes page will now slide spotting notes up if there are no In or Out shot descriptions.",
@@ -317,7 +317,7 @@
     {
       "version": "9.4.4",
       "date": "April 6, 2011",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "change": [
           "MIDI Start Time field: colons now optional during entry, are added automatically (FM Pro 10+ only).",
@@ -333,7 +333,7 @@
     {
       "version": "9.4.3",
       "date": "March 8, 2011",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "new": [
           "New SCORE tracking system. Instead of assigning SCORE as a usage, there is a new button to toggle each cue between SCORE or OTHER. This allows the usages to be correctly assigned, the program no longer relies on assigning a usage of SCORE to track which cues are to be composed versus which are not composer's cues.",
@@ -352,7 +352,7 @@
     {
       "version": "9.4.2",
       "date": "February 21, 2011",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "change": [
           "Updated the methods used for row highlighting on the Status and Studio pages to work with new FM Pro 10 and 11 features. Note this has deprecated row highlighting in FM Pro 9 and earlier."
@@ -362,7 +362,7 @@
     {
       "version": "9.4.1",
       "date": "February 21, 2011",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "new": ["Added a \"Check for Updates\" feature to the Help and About menus."],
         "change": [
@@ -378,7 +378,7 @@
     {
       "version": "9.4",
       "date": "January 27, 2011",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "new": [
           "Added a button to Session Order page that can copy data from Status notes into the Session Order notes, for all cues in the session order list, or just the current cue."
@@ -405,7 +405,7 @@
     {
       "version": "9.3.6",
       "date": "April 19, 2010",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "change": [
           "Added next/prev cue buttons to Utilities page for the \"Set cue hour to:\" feature"
@@ -418,7 +418,7 @@
     {
       "version": "9.3.5",
       "date": "April 8, 2010",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "new": [
           "Added ability to define the timecode hour independent of the Cue Number for Acts/Reels"
@@ -428,7 +428,7 @@
     {
       "version": "9.3.4",
       "date": "April 3, 2010",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "new": [
           "Added a button in Cue Info to copy the spotted start time to the MIDI start time"
@@ -438,7 +438,7 @@
     {
       "version": "9.3.3",
       "date": "Nov 3, 2009",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "change": [
           "FileMaker Pro v10 Compatibility (Switched from EventScript plugin to Script Triggers,  maintained backwards compatibility.)",
@@ -455,7 +455,7 @@
     {
       "version": "9.3.2",
       "date": "Nov 2, 2009",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "change": [
           "Replaced Aqua style buttons on Home and Utilities pages with Filemaker style buttons."
@@ -468,7 +468,7 @@
     {
       "version": "9.3.1",
       "date": "Aug 7, 2009",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "link": "",
       "log": {
         "new": [
           "Added 'To Do' and 'Done' cue tracking for record order progress in the Take-Log.",
@@ -509,8 +509,8 @@
     },
     {
       "version": "9.2",
-      "date": "",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "date": "June 2009",
+      "link": "",
       "log": {
         "new": [
           "Added support for 23.976 frame rate",
@@ -538,8 +538,8 @@
     },
     {
       "version": "9.1.3",
-      "date": "",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "date": "March 2009",
+      "link": "",
       "log": {
         "new": [
           "Added Import Cues feature to import Cue Numbers, Start and Finish times from a Pro Tools Session Text File",
@@ -554,8 +554,8 @@
     },
     {
       "version": "9.0",
-      "date": "",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Film_Cue_Tracker.zip",
+      "date": "February 2009",
+      "link": "",
       "log": {
         "new": [
           "Redesigned opening splash/about screen.",

@@ -9,19 +9,19 @@
 	let version = GetURLParameter('version');
 
 	$.getJSON("changelog.json", function(data) {
-		let items = [];
+		let changes = [];
 		$.each(data.revision, function(key, revision) {
 			if (versionCompare(version, revision.version) < 0) {
-				let changes = '<li class="version"><h2>' + revision.version + (revision.date.length ? ' <span class="date">[ ' + revision.date + ' ]</span>' : '') + '</h2></li>';
-				changes = changes + makeList(revision.log.new, 'New');
-				changes = changes + makeList(revision.log.change, 'Change');
-				changes = changes + makeList(revision.log.fix, 'Fix');
-				items.push(changes);
+				let item = `<li class="version"><h2>${revision.version} <span class="date">[ ${revision.date} ]</span></h2></li>`;
+				for (let [key, value] of Object.entries(revision.log)) {
+					item += makeList(value, key);
+				}
+				changes.push(item);
 			}
 		});
-		if (items.length) {
-			$("#changes").html(items.join(""));
+		if (changes.length) {
 			$("#changelist").show();
+			$("#changes").html(changes.join(""));
 			$("#download").attr("href", data.revision[0].link);
 			$(".new-version").text(data.revision[0].version);
 			if (version) {
@@ -36,17 +36,28 @@
 	/**
 	 * Format changelog data into list elements
 	 *
-	 * @param {object} input An array object of changelog data
-	 * @param {string} type The changelog format (new|fix|change)
+	 * @param {object} changes An array object of changelog data
+	 * @param {string} index The changelog format (new|fix|change)
+	 * @return {string}
 	 */
-	function makeList(input, type) {
-		let output = '';
-		if (input !== undefined) {
-			for (let i = 0; i < input.length; i++) {
-				output = output + '<li> <span class="badge badge-' + type.toLowerCase() + '">' + type + '</span> ' + input[i] + '</li>';
-			}
-		}
-		return output;
+	function makeList(changes, index) {
+		return (changes !== undefined) ?
+			changes.reduce((output, change) => {
+				return output + `<li><span class="badge badge-${index}">${titleCase(index)}</span> ${change}</li>`;
+			}, '') : ''
+		;
+	}
+
+	/**
+	 * Convert string to Title Case
+	 *
+	 * @param {string} str
+	 * @return {string}
+	 */
+	function titleCase(str) {
+		return str.replace(/\b\w/g, function(t) {
+			return t.toUpperCase()
+		});
 	}
 
 	/**
