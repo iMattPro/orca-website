@@ -3,7 +3,7 @@
     {
       "version": "12.2.2",
       "date": "Jun 11, 2020",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.2.2.zip",
+      "link": "https://www.dropbox.com/s/zz80p1wv76iwcna/Cue%20Tracker%2012.2.2.fmp12?dl=0",
       "log": {
         "change": [
           "Updated the Check for Updates feature."
@@ -13,7 +13,7 @@
     {
       "version": "12.2.1",
       "date": "Nov 12, 2019",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.2.1.zip",
+      "link": "https://www.dropbox.com/s/u0aeq5d3wy5akdv/Cue%20Tracker%2012.2.1.fmp12?dl=0",
       "log": {
         "new": [
           "Added an alert window indicating when importing cues is complete."
@@ -26,7 +26,7 @@
     {
       "version": "12.2",
       "date": "Nov 8, 2019",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.2.0.zip",
+      "link": "",
       "log": {
         "new": [
           "Added “Export to Conformalizer” menu action."
@@ -40,7 +40,7 @@
     {
       "version": "12.1.1",
       "date": "Jul 14, 2019",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.1.1.zip",
+      "link": "",
       "log": {
         "fix": [
           "Ensure new and/or reset Cue Tracker files will not show an \"errors detected\" message in the Cue Conformer before it has been run."
@@ -50,7 +50,7 @@
     {
       "version": "12.1",
       "date": "Sep 5, 2017",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.1.0.zip",
+      "link": "",
       "log": {
         "change": [
           "Reverted Cue Numbering back to original format (1m01) due to sorting problems with more complex cue numbers, such as ranges and a/b formats.",
@@ -61,7 +61,7 @@
     {
       "version": "12.0",
       "date": "Aug 14, 2017",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_12.0.0.zip",
+      "link": "",
       "log": {
         "change": [
           "Converted for FileMaker Pro 12. No longer compatible with earlier versions of FileMaker Pro.",
@@ -78,7 +78,7 @@
     {
       "version": "10.0.15",
       "date": "July 23, 2014",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.15.zip",
+      "link": "",
       "log": {
         "change": [
           "Fixed an issue that could crash on imports during cue conform and compare operations."
@@ -88,7 +88,7 @@
     {
       "version": "10.0.14",
       "date": "Jan 23, 2014",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.14.zip",
+      "link": "",
       "log": {
         "change": [
           "Added a new option \"Export Spotting\" to the File Menu."
@@ -98,7 +98,7 @@
     {
       "version": "10.0.13",
       "date": "Mar 12, 2013",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.13.zip",
+      "link": "",
       "log": {
         "change": [
           "Added a Bar Start # field (replaces the unused Clicks for free field)."
@@ -108,7 +108,7 @@
     {
       "version": "10.0.12",
       "date": "Jan 30, 2013",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.12.zip",
+      "link": "",
       "log": {
         "change": [
           "Added option to lock the Hour Override value as a default for automatic entry in newly created cues."
@@ -118,7 +118,7 @@
     {
       "version": "10.0.11",
       "date": "Jan 29, 2013",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.11.zip",
+      "link": "",
       "log": {
         "change": [
           "Include Start and Finish timecode in Cue Sheet Exports."
@@ -128,7 +128,7 @@
     {
       "version": "10.0.10",
       "date": "Nov 30, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.10.zip",
+      "link": "",
       "log": {
         "change": [
           "Correctly handle Midi start time hours and minutes during Auto Conforms."
@@ -138,7 +138,7 @@
     {
       "version": "10.0.9",
       "date": "Nov 25, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.9.zip",
+      "link": "",
       "log": {
         "change": [
           "Show an error message when trying to create new cues before a project frame rate has been selected."
@@ -148,7 +148,7 @@
     {
       "version": "10.0.8",
       "date": "Nov 25, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.8.zip",
+      "link": "",
       "log": {
         "fix": [
           "Use the correct Timing Summary (Entire Project) at the end of the Composer's Spotting Chart when outputting in PDF format.",
@@ -162,7 +162,7 @@
     {
       "version": "10.0.7",
       "date": "Nov 18, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.7.zip",
+      "link": "",
       "log": {
         "fix": [
           "When auto-conforming, any cues using the Hour Override option will get their new MIDI start time hour from the override value instead of the cue number."
@@ -172,7 +172,7 @@
     {
       "version": "10.0.6",
       "date": "Nov 15, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.6.zip",
+      "link": "",
       "log": {
         "fix": [
           "Fixed a critical compatibility issue with Pro Tools 10 session info text file imports.",
@@ -183,7 +183,7 @@
     {
       "version": "10.0.5",
       "date": "June 12, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.5.zip",
+      "link": "",
       "log": {
         "change": [
           "When opening, Cue Tracker will only go to the last viewed layout if it is a main layout page."
@@ -193,7 +193,7 @@
     {
       "version": "10.0.4",
       "date": "May 14, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.4.zip",
+      "link": "",
       "log": {
         "change": [
           "Certain pages, such as Status page, no longer resize to full-screen to avoid problems on some systems in which the window disappears from the monitor."
@@ -203,7 +203,7 @@
     {
       "version": "10.0.3",
       "date": "January 15, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.3.zip",
+      "link": "",
       "log": {
         "change": [
           "Updated links to Cue Tracker materials at Orca-Music.com"
@@ -213,7 +213,7 @@
     {
       "version": "10.0.2",
       "date": "January 9, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.2.zip",
+      "link": "",
       "log": {
         "change": [
           "When saving Composer/MX Editor/Producer Charts as PDF files, you will be prompted if you want the Timing Summary information added to the end of the PDF file.",
@@ -238,7 +238,7 @@
     {
       "version": "10.0.1",
       "date": "January 2, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.1.zip",
+      "link": "",
       "log": {
         "change": [
           "Cleaned up the appearance of the Printing layout significantly.",
@@ -249,7 +249,7 @@
     {
       "version": "10.0",
       "date": "January 1, 2012",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_10.0.0.zip",
+      "link": "",
       "log": {
         "change": [
           "Redesigned user interface.",
@@ -269,7 +269,7 @@
     {
       "version": "9.5.2",
       "date": "November 26, 2011",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_9.5.2.zip",
+      "link": "",
       "log": {
         "change": [
           "Beautified the progress bars that appear on the Studio Take Log and Studio Record Order pages."
@@ -282,7 +282,7 @@
     {
       "version": "9.5.1",
       "date": "November 16, 2011",
-      "link": "http://www.orca-music.com/cue_tracker/packages/Cue_Tracker_9.5.1.zip",
+      "link": "",
       "log": {
         "change": [
           "Name change - now known as CUE TRACKER.",
@@ -364,7 +364,9 @@
       "date": "February 21, 2011",
       "link": "",
       "log": {
-        "new": ["Added a \"Check for Updates\" feature to the Help and About menus."],
+        "new": [
+          "Added a \"Check for Updates\" feature to the Help and About menus."
+        ],
         "change": [
           "In Studio page, Time Completed/Remaining progress bar and data is retained correctly."
         ],
