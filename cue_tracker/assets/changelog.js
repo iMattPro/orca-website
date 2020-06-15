@@ -6,27 +6,29 @@
  * 06/10/2020
  *****************************/
 (function() {
-	let version = GetURLParameter('version');
+	let uVersion = GetURLParameter('version');
 
 	$.getJSON("changelog.json", function(data) {
 		let changes = [];
-		$.each(data.revision, function(key, revision) {
-			if (versionCompare(version, revision.version) < 0) {
-				let item = `<li class="version"><h2>${revision.version} <span class="date">[ ${revision.date} ]</span></h2></li>`;
-				for (let [key, value] of Object.entries(revision.log)) {
-					item += makeList(value, key);
+		const {revision} = data;
+		const [{version: releaseVersion, link: releaseLink}] = revision;
+		$.each(revision, function(key, {version, date, log}) {
+			if (versionCompare(uVersion, version) < 0) {
+				let list = `<li class="version"><h2>${version} <span class="date">[ ${date} ]</span></h2></li>`;
+				for (let [key, value] of Object.entries(log)) {
+					list += makeList(value, key);
 				}
-				changes.push(item);
+				changes.push(list);
 			}
 		});
 		if (changes.length) {
 			$("#changelist").show();
 			$("#changes").html(changes.join(""));
-			$("#download").attr("href", data.revision[0].link);
-			$(".new-version").text(data.revision[0].version);
-			if (version) {
+			$("#download").attr("href", releaseLink);
+			$(".new-version").text(releaseVersion);
+			if (uVersion) {
 				$("#current-version").show();
-				$("#version").text(version);
+				$("#version").text(uVersion);
 			}
 		} else {
 			$("#up-to-date").show();
@@ -36,7 +38,7 @@
 	/**
 	 * Format changelog data into list elements
 	 *
-	 * @param {object} changes An array object of changelog data
+	 * @param {array} changes An array of changelog data
 	 * @param {string} index The changelog format (new|fix|change)
 	 * @return {string}
 	 */
@@ -97,10 +99,9 @@
 	 * - a positive integer iff v1 > v2
 	 * - NaN if either version string is in the wrong format
 	 */
-	function versionCompare(v1, v2, options) {
-		let lexicographical = (options && options.lexicographical) || false,
-			zeroExtend = (options && options.zeroExtend) || true,
-			v1parts = (v1 || "0").split('.'),
+	function versionCompare(v1, v2, options = {}) {
+		const {lexicographical = false, zeroExtend = true} = options;
+		let v1parts = (v1 || "0").split('.'),
 			v2parts = (v2 || "0").split('.');
 
 		function isValidPart(x) {
