@@ -86,9 +86,9 @@
 		(function(){
 			// Old page requests 404, use Javascript to handle the URL redirect
 			const redirects = {
-				'/fstvids/index.html': 'http://orca-music.com/cue_tracker/index.html',
-				'/software/fctversioncheck.php': 'http://orca-music.com/cue_tracker/changelog.html',
-				'/cue_tracker/ct_version_check.php': 'http://orca-music.com/cue_tracker/changelog.html'
+				'/fstvids/index.html': 'https://orca-music.com/cue_tracker/index.html',
+				'/software/fctversioncheck.php': 'https://orca-music.com/cue_tracker/changelog.html',
+				'/cue_tracker/ct_version_check.php': 'https://orca-music.com/cue_tracker/changelog.html'
 			}
 			const url = redirects[location.pathname];
 			if (url !== undefined) location.href = url;
