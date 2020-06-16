@@ -91,7 +91,7 @@
 				'/cue_tracker/ct_version_check.php': 'https://orca-music.com/cue_tracker/changelog.html'
 			}
 			const url = redirects[location.pathname];
-			if (url !== undefined) location.href = url;
+			if (url !== undefined) location.href = url + location.search || '';
 		})();
 	</script>
 </head>
