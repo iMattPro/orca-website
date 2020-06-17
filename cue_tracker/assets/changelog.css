@@ -96,36 +96,8 @@ img {
 	display: none;
 }
 
-
 #rocket {
-	font-size: 16rem;
+	font-size: 200px;
 	position: relative;
-	top: 10rem;
-}
-
-.launch {
-	-webkit-animation: backInUpnOut 5s infinite;
-	animation: backInUpnOut 5s infinite;
-}
-
-@keyframes backInUpnOut {
-	0% {
-		transform: translateY(1000px) scale(0.7) rotate(-45deg);
-	}
-
-	40% {
-		transform: translateY(0px) scale(0.7) rotate(-45deg);
-	}
-
-	50% {
-		transform: scale(1) rotate(-45deg);
-	}
-
-	60% {
-		transform: translateY(0px) scale(0.7) rotate(-45deg);
-	}
-
-	100% {
-		transform: translateY(-700px) scale(0.7) rotate(-45deg);
-	}
+	top: 50px;
 }
