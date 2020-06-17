@@ -100,6 +100,14 @@ $(document).ready(function() {
 		}
 	});
 
-});
+	// contact form
+	$('.contact-form').on('click', function(e) {
+		e.preventDefault();
+		const $form = $('#cm-frm');
+		$form.removeClass('d-none');
+		$('html,body').animate({scrollTop: $form.offset().top}, 'slow');
+	});
 
-$('.copyYear').append(' - ' + (new Date).getFullYear());
+	// dynamic copyright year
+	$('.copyYear').append(' - ' + (new Date).getFullYear());
+});
