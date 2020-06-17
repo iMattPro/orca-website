@@ -25,6 +25,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 footer { font-family: 'Nunito', Helvetica, Arial, sans-serif }
 
 .container { max-width: 970px; }
@@ -45,23 +47,13 @@ footer { font-family: 'Nunito', Helvetica, Arial, sans-serif }
 
 .connections { margin-bottom: 40px; }
 
-.jumbotron h1 { font-size: 4em; }
-
-.nav > li > a:hover {
-	text-decoration: none;
-	background-color: #1e2024;
+.jumbotron {
+	background-color: #1c1e22;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
-.nav-list .divider {
-	background-color: #45484c;
-	border-bottom: 1px solid #24262c;
-}
-
-.nav-list > li > a,
-.nav-list .nav-header {
-	text-shadow: none;
-	padding: 3px 15px;
-}
+.jumbotron h1 { font-size: 3.5em; }
 
 .ir {
 	background-color: transparent;
