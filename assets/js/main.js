@@ -12,7 +12,7 @@ function mycarousel_initCallback(carousel, state) {
 		var i, items = [];
 
 		$.each(data, function(title, url) {
-			items.push(`<img class="tipTip poster" src="assets/img/posters/${url}" title="${title}" alt="" width="94" height="140" />`);
+			items.push('<img class="poster" src="assets/img/posters/' + url + '" data-toggle="tooltip" data-placement="bottom" title="' + title + '" alt="" width="94" height="140" />');
 		});
 
 		for (i = 0; i < items.length; i++) {
@@ -40,7 +40,6 @@ function mycarousel_initCallback(carousel, state) {
 }
 
 $(document).ready(function() {
-
 	// jCarousel
 	$('#credits_carousel').jcarousel({
 		auto: 8,
@@ -52,13 +51,13 @@ $(document).ready(function() {
 	// contact form
 	$('.contact-form').on('click', function(e) {
 		e.preventDefault();
-		const $form = $('#cm-frm');
+		var $form = $('#cm-frm');
 		$form.removeClass('d-none');
 		$('html,body').animate({scrollTop: $form.offset().top}, 'slow');
 	});
 
 	// dynamic copyright year
-	$('.copyYear').append(` - ${(new Date).getFullYear()}`);
+	$('.copyYear').append(' - ' + (new Date).getFullYear());
 });
 
 $(document).ajaxComplete(function() {
