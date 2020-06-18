@@ -32,7 +32,7 @@
 			var html = '<ul>';
 
 			$.each(data, function(title, url) {
-				html += '<li><img class="poster" src="assets/img/posters/' + url + '" data-toggle="tooltip" data-placement="bottom" title="' + title + '" alt="" width="94" height="140" /></li>';
+				html += '<li><img class="poster" src="assets/posters/' + url + '" data-toggle="tooltip" data-placement="bottom" title="' + title + '" alt="" width="94" height="140" /></li>';
 			});
 
 			html += '</ul>';
@@ -50,7 +50,7 @@
 		};
 
 		// AJAX load poster JSON data
-		$.getJSON('assets/img/posters/poster_images.json', setup);
+		$.getJSON('assets/posters/poster_images.json', setup);
 
 		// Pause autoscrolling if the user moves with the cursor over the clip.
 		jcarousel.on('mouseenter', function() {
