@@ -1,65 +1,77 @@
-/**
- * Callback functionality for jCarousel
- */
-function mycarousel_initCallback(carousel, state) {
-	// Since we get all URLs in one file, we simply add all items at once and set the size accordingly.
-	if (state !== 'init') {
-		return;
-	}
+(function($) {
+	$(document).ready(function() {
+		// Initialize jCarousel
+		var jcarousel = $('.jcarousel').jcarousel();
 
-	// Load all posters from an external JSON file via AJAX
-	$.getJSON('assets/img/posters/poster_images.json', function(data) {
-		var i, items = [];
+		// Initialize jCarousel Nav Buttons
+		$('.jcarousel-control-prev')
+			.on('jcarouselcontrol:active', function() {
+				$(this).removeClass('inactive');
+			})
+			.on('jcarouselcontrol:inactive', function() {
+				$(this).addClass('inactive');
+			})
+			.jcarouselControl({
+				target: '-=8'
+			});
 
-		$.each(data, function(title, url) {
-			items.push('<img class="poster" src="assets/img/posters/' + url + '" data-toggle="tooltip" data-placement="bottom" title="' + title + '" alt="" width="94" height="140" />');
+		$('.jcarousel-control-next')
+			.on('jcarouselcontrol:active', function() {
+				$(this).removeClass('inactive');
+			})
+			.on('jcarouselcontrol:inactive', function() {
+				$(this).addClass('inactive');
+			})
+			.jcarouselControl({
+				target: '+=8'
+			});
+
+		// Setup the carousel poster data
+		var setup = function(data) {
+
+			var html = '<ul>';
+
+			$.each(data, function(title, url) {
+				html += '<li><img class="poster" src="assets/img/posters/' + url + '" data-toggle="tooltip" data-placement="bottom" title="' + title + '" alt="" width="94" height="140" /></li>';
+			});
+
+			html += '</ul>';
+
+			// Append items
+			jcarousel.html(html);
+
+			// Reload carousel
+			jcarousel.jcarousel('reload').jcarouselAutoscroll({
+				interval: 8000,
+				target: '+=8',
+				autostart: true
+			});
+
+		};
+
+		// AJAX load poster JSON data
+		$.getJSON('assets/img/posters/poster_images.json', setup);
+
+		// Pause autoscrolling if the user moves with the cursor over the clip.
+		jcarousel.on('mouseenter', function() {
+			jcarousel.jcarouselAutoscroll('stop');
+		}).on('mouseleave', function() {
+			jcarousel.jcarouselAutoscroll('start');
 		});
 
-		for (i = 0; i < items.length; i++) {
-			carousel.add(i + 1, items[i]);
-		}
+		// contact form
+		$('.contact-form').on('click', function(e) {
+			e.preventDefault();
+			var $form = $('#cm-frm');
+			$form.removeClass('d-none');
+			$('html,body').animate({scrollTop: $form.offset().top}, 'slow');
+		});
 
-		carousel.size(items.length);
+		// dynamic copyright year
+		$('.copyYear').append(' - ' + (new Date).getFullYear());
 	});
 
-	// Disable autoscrolling if the user clicks the prev or next button.
-	carousel.buttonNext.on('click', function() {
-		carousel.startAuto(0);
+	$(document).ajaxComplete(function() {
+		$('[data-toggle="tooltip"]').tooltip();
 	});
-
-	carousel.buttonPrev.on('click', function() {
-		carousel.startAuto(0);
-	});
-
-	// Pause autoscrolling if the user moves with the cursor over the clip.
-	carousel.clip.hover(function() {
-		carousel.stopAuto();
-	}, function() {
-		carousel.startAuto();
-	});
-}
-
-$(document).ready(function() {
-	// jCarousel
-	$('#credits_carousel').jcarousel({
-		auto: 8,
-		wrap: 'circular',
-		scroll: 8,
-		initCallback: mycarousel_initCallback
-	});
-
-	// contact form
-	$('.contact-form').on('click', function(e) {
-		e.preventDefault();
-		var $form = $('#cm-frm');
-		$form.removeClass('d-none');
-		$('html,body').animate({scrollTop: $form.offset().top}, 'slow');
-	});
-
-	// dynamic copyright year
-	$('.copyYear').append(' - ' + (new Date).getFullYear());
-});
-
-$(document).ajaxComplete(function() {
-	$('[data-toggle="tooltip"]').tooltip();
-});
+})(jQuery);

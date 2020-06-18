@@ -114,6 +114,10 @@ footer { font-family: 'Nunito', Helvetica, Arial, sans-serif }
 .poster {
 	width: 94px;
 	height: 140px;
+	border: solid 1px #a9a9a9;
+	-webkit-box-shadow: 0 0 2px #999;
+	-moz-box-shadow: 0 0 2px #999;
+	box-shadow: 0 0 2px #999;
 }
 
 footer {
@@ -258,4 +262,87 @@ footer p {
 #cm-frm fieldset.locale input[name="city"],
 #cm-frm fieldset.locale select[name="state"] {
 	margin-right: 3%;
+}
+
+/** jCarousel **/
+.jcarousel-wrapper {
+	position: relative;
+	background: #24262c;
+	border: 10px solid #24262c;
+	width: 100%;
+	height: 180px;
+	margin-bottom: 20px;
+	padding: 10px 45px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.jcarousel {
+	position: relative;
+	overflow: hidden;
+}
+
+.jcarousel ul {
+	width: 10000em;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jcarousel li {
+	float: left;
+	width: 94px;
+	height: 140px;
+	margin: 0 5px;
+}
+
+.jcarousel img {
+	max-height: 140px;
+}
+
+.jcarousel .loading {
+	text-align: center;
+	line-height: 140px;
+}
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+	position: absolute;
+	top: 65px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: #4E443C;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 0 1px #000;
+	font: 24px/27px Arial, sans-serif;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 0 0 2px #999;
+	-moz-box-shadow: 0 0 2px #999;
+	box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+	left: 0;
+}
+
+.jcarousel-control-next {
+	right: 0;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+	display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+	opacity: .5;
+	cursor: default;
 }
