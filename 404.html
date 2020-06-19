@@ -1,121 +1,117 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="robots" content="noindex" />
-	<title>Page Not Found</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<!--
-	A codepen by Alberto Jerez (http://codepen.io/ajerez/pen/jPWgyP)
-	-->
-	<style>
-		@import url("https://fonts.googleapis.com/css?family=Raleway:700");
-		*, *:before, *:after {
-			box-sizing: border-box;
-		}
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Page Not Found - Orca Music, Inc.</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-		html {
-			height: 100%;
-		}
+		<!-- Use Javascript to handle 301-URL redirects -->
+		<script>
+			(function(){
+				var redirects = {
+					'/fstvids/index.html': 'https://orca-music.com/cue_tracker/index.html',
+					'/software/fctversioncheck.php': 'https://orca-music.com/cue_tracker/changelog.html',
+					'/cue_tracker/ct_version_check.php': 'https://orca-music.com/cue_tracker/changelog.html'
+				}
+				var url = redirects[location.pathname];
+				if (url !== undefined) location.href = url + location.search || '';
+			})();
+		</script>
 
-		body {
-			background: url("/assets/img/catfail.gif") no-repeat fixed center center;
-			background-size: cover;
-			background-color: #342643;
-			font-family: 'Raleway', sans-serif;
-			height: 100%;
-		}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32334231-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		.text-wrapper {
-			height: 100%;
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			-ms-flex-align: center;
-			align-items: center;
-			-webkit-box-pack: center;
-			-webkit-justify-content: center;
-			-ms-flex-pack: center;
-			justify-content: center;
-		}
+			gtag('config', 'UA-32334231-2');
+		</script>
 
-		.title {
-			font-size: 6em;
-			font-weight: 700;
-			color: #EE4B5E;
-		}
-
-		.subtitle {
-			font-size: 40px;
-			font-weight: 700;
-			color: #1FA9D6;
-		}
-
-		.buttons {
-			margin: 30px;
-		}
-		.buttons a.button {
-			font-weight: 700;
-			border: 2px solid #EE4B5E;
-			text-decoration: none;
-			padding: 15px;
-			text-transform: uppercase;
-			color: #EE4B5E;
-			border-radius: 26px;
-			-webkit-transition: all 0.2s ease-in-out;
-			transition: all 0.2s ease-in-out;
-		}
-		.buttons a.button:hover {
-			background-color: #EE4B5E;
-			color: white;
-			-webkit-transition: all 0.2s ease-in-out;
-			transition: all 0.2s ease-in-out;
-		}
-	</style>
-	<script>
-		(function(){
-			// Old page requests 404, use Javascript to handle the URL redirect
-			const redirects = {
-				'/fstvids/index.html': 'https://orca-music.com/cue_tracker/index.html',
-				'/software/fctversioncheck.php': 'https://orca-music.com/cue_tracker/changelog.html',
-				'/cue_tracker/ct_version_check.php': 'https://orca-music.com/cue_tracker/changelog.html'
+		<!-- A codepen by Alberto Jerez (http://codepen.io/ajerez/pen/jPWgyP) -->
+		<style>
+			@import url("https://fonts.googleapis.com/css?family=Raleway:700");
+			*, *:before, *:after {
+				box-sizing: border-box;
 			}
-			const url = redirects[location.pathname];
-			if (url !== undefined) location.href = url + location.search || '';
-		})();
+			html {
+				height: 100%;
+			}
+			body {
+				background: url("/assets/img/catfail.gif") no-repeat fixed center center;
+				background-size: cover;
+				background-color: #342643;
+				font-family: 'Raleway', sans-serif;
+				height: 100%;
+			}
+			.text-wrapper {
+				height: 100%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+			}
+			.title {
+				font-size: 6em;
+				font-weight: 700;
+				color: #EE4B5E;
+			}
+			.subtitle {
+				font-size: 40px;
+				font-weight: 700;
+				color: #1FA9D6;
+			}
+			.buttons {
+				margin: 30px;
+			}
+			.buttons a.button {
+				font-weight: 700;
+				border: 2px solid #EE4B5E;
+				text-decoration: none;
+				padding: 15px;
+				text-transform: uppercase;
+				color: #EE4B5E;
+				border-radius: 26px;
+				-webkit-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+			}
+			.buttons a.button:hover {
+				background-color: #EE4B5E;
+				color: white;
+				-webkit-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="text-wrapper">
+			<div class="title" data-content="404">
+				404
+			</div>
 
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			<div class="subtitle">
+				Oops, the page you're looking for doesn't exist.
+			</div>
 
-		ga('create', 'UA-32334231-2', 'orca-music.com');
-		ga('send', 'pageview');
-	</script>
-</head>
-<body>
-<div class="text-wrapper">
-	<div class="title" data-content="404">
-		404
-	</div>
-
-	<div class="subtitle">
-		Oops, the page you're looking for doesn't exist.
-	</div>
-
-	<div class="buttons">
-		<a class="button" href="http://www.orca-music.com">Go to Orca Music</a>
-	</div>
-</div>
-</body>
+			<div class="buttons">
+				<a class="button" href="http://www.orca-music.com">Go to Orca Music</a>
+			</div>
+		</div>
+	</body>
 </html>
