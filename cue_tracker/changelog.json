@@ -261,7 +261,7 @@
         "fix": [
           "Cue Sheet: When exporting to a file, all listed writers and publishers will be correctly exported.",
           "Cue Split and Duplicate: Related data from the Cue Timings and Status Logs are now correctly handled during these processes.",
-          "IMDB button: Will now behave correctly, asking you to enter an URL if one does not exist, or taking you to the web page if the URL has been set. Also added an option-click to change the URL after one has alredy been set.",
+          "IMDB button: Will now behave correctly, asking you to enter an URL if one does not exist, or taking you to the web page if the URL has been set. Also added an option-click to change the URL after one has already been set.",
           "General bug fixes and improvements."
         ]
       }
