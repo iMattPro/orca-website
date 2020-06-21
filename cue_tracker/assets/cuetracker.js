@@ -69,12 +69,12 @@
 	 * @return {string|boolean} Parameter's value or false
 	 */
 	function GetURLParameter(sParam) {
-		let sPageURL = window.location.search.substring(1);
-		let sURLVariables = sPageURL.split('&');
-		for (let i = 0; i < sURLVariables.length; i++) {
-			let sParameterName = sURLVariables[i].split('=');
-			if (sParameterName[0] === sParam) {
-				return sParameterName[1];
+		const sPageURL = window.location.search.substring(1);
+		const sURLVariables = sPageURL.split('&');
+		for (let sURLVariable of sURLVariables) {
+			let [param, value] = sURLVariable.split('=');
+			if (param === sParam) {
+				return value;
 			}
 		}
 		return false;

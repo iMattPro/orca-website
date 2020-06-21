@@ -17,7 +17,7 @@
 					'/cue_tracker/ct_version_check.php': 'https://orca-music.com/cue_tracker/changelog.html'
 				};
 				var url = redirects[location.pathname];
-				if (url !== undefined) location.href = url + location.search || '';
+				if (typeof url !== 'undefined') location.href = url + location.search || '';
 			})();
 		</script>
 
