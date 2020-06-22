@@ -1,18 +1,24 @@
-/*****************************
+/*
  * CUE TRACKER VERSION CHECK
- * Version 5
  *
- * Written by Matt Friedman
- * 06/10/2020
- *****************************/
-(function() {
-	let uVersion = GetURLParameter('version');
+ * (c) 2020 Matt Friedman
+ */
+(function(document, window) {
+	let uVersion = GetURLParameter("version");
 
-	$.getJSON("changelog.json", function(data) {
+	fetch("changelog.json").then(function (response) {
+		// The API call was successful!
+		if (response.ok) {
+			return response.json();
+		} else {
+			return Promise.reject(response);
+		}
+	}).then(function (data) {
+		// This is the JSON from our response
 		let changes = [];
 		const {revision} = data;
 		const [{version: releaseVersion, link: releaseLink}] = revision;
-		$.each(revision, function(key, {version, date, log}) {
+		revision.forEach(function({version, date, log}) {
 			if (versionCompare(uVersion, version) < 0) {
 				let list = `<li class="version"><h2>${version} <span class="date">[ ${date} ]</span></h2></li>`;
 				for (let [key, value] of Object.entries(log)) {
@@ -22,18 +28,69 @@
 			}
 		});
 		if (changes.length) {
-			$("#changelist").show();
-			$("#changes").html(changes.join(""));
-			$("#download").attr("href", releaseLink);
-			$(".new-version").text(releaseVersion);
+			show("#changelist");
+			setHtml("#changes", changes.join(""));
+			setAttr("#download", "href", releaseLink);
+			setText(".new-version", releaseVersion);
 			if (uVersion) {
-				$("#current-version").show();
-				$("#version").text(uVersion);
+				show("#current-version");
+				setText("#version", uVersion);
 			}
 		} else {
-			$("#up-to-date").show();
+			show("#up-to-date");
 		}
+	}).catch(function (err) {
+		// There was an error
+		console.warn("Something went wrong.", err);
 	});
+
+	/**
+	 * Display DOM elements
+	 *
+	 * @param {string} elem DOM element
+	 */
+	function show(elem) {
+		document.querySelectorAll(elem).forEach(el => {
+			el.style.display = "block"
+		});
+	}
+
+	/**
+	 * Set text on DOM elements
+	 *
+	 * @param {string} elem DOM element
+	 * @param {string} text Text to use
+	 */
+	function setText(elem, text) {
+		document.querySelectorAll(elem).forEach(el => {
+			el.textContent = text
+		});
+	}
+
+	/**
+	 * Set HTML on DOM elements
+	 *
+	 * @param {string} elem DOM element
+	 * @param {string} html HTML to use
+	 */
+	function setHtml(elem, html) {
+		document.querySelectorAll(elem).forEach(el => {
+			el.innerHTML = html
+		});
+	}
+
+	/**
+	 * Set the attribute of DOM elements
+	 *
+	 * @param {string} elem DOM element
+	 * @param {string} attr The attribute to set
+	 * @param {string} value The value to use
+	 */
+	function setAttr(elem, attr, value) {
+		document.querySelectorAll(elem).forEach(el => {
+			el.setAttribute(attr, value)
+		});
+	}
 
 	/**
 	 * Format changelog data into list elements
@@ -46,7 +103,7 @@
 		return (changes !== undefined) ?
 			changes.reduce((output, change) => {
 				return output + `<li><span class="badge badge-${index}">${titleCase(index)}</span> ${change}</li>`;
-			}, '') : ''
+			}, "") : ""
 		;
 	}
 
@@ -58,7 +115,7 @@
 	 */
 	function titleCase(str) {
 		return str.replace(/\b\w/g, function(t) {
-			return t.toUpperCase()
+			return t.toUpperCase();
 		});
 	}
 
@@ -70,9 +127,9 @@
 	 */
 	function GetURLParameter(sParam) {
 		const sPageURL = window.location.search.substring(1);
-		const sURLVariables = sPageURL.split('&');
+		const sURLVariables = sPageURL.split("&");
 		for (let sURLVariable of sURLVariables) {
-			let [param, value] = sURLVariable.split('=');
+			let [param, value] = sURLVariable.split("=");
 			if (param === sParam) {
 				return value;
 			}
@@ -142,4 +199,4 @@
 		}
 		return 0;
 	}
-})();
+})(document, window);
