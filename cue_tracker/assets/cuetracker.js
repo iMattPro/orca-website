@@ -20,7 +20,7 @@
 		const [{version: releaseVersion, link: releaseLink}] = revision;
 		revision.forEach(function({version, date, log}) {
 			if (versionCompare(uVersion, version) < 0) {
-				let list = `<li class="version"><h2>${version} <span class="date">[ ${date} ]</span></h2></li>`;
+				let list = `<li><h2>${version} <span class="date">[ ${date} ]</span></h2></li>`;
 				for (let [key, value] of Object.entries(log)) {
 					list += makeList(value, key);
 				}
@@ -102,21 +102,9 @@
 	function makeList(changes, index) {
 		return (changes !== undefined) ?
 			changes.reduce((output, change) => {
-				return output + `<li><span class="badge badge-${index}">${titleCase(index)}</span> ${change}</li>`;
+				return output + `<li><span class="badge badge-${index}">${index}</span> ${change}</li>`;
 			}, "") : ""
 		;
-	}
-
-	/**
-	 * Convert string to Title Case
-	 *
-	 * @param {string} str
-	 * @return {string}
-	 */
-	function titleCase(str) {
-		return str.replace(/\b\w/g, function(t) {
-			return t.toUpperCase();
-		});
 	}
 
 	/**
