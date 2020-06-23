@@ -1,7 +1,9 @@
 (function($) {
 	$(document).ready(function() {
 		// Initialize jCarousel
-		var jcarousel = $('.jcarousel').jcarousel();
+		var jcarousel = $('.jcarousel').jcarousel({
+			wrap: 'circular'
+		});
 
 		// Initialize jCarousel Nav Buttons
 		$('.jcarousel-control-prev')
