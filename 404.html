@@ -8,7 +8,7 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-		<!-- Use Javascript to handle 301-URL redirects -->
+		<!-- Use Javascript to handle URL redirects -->
 		<script>
 			(function(){
 				var redirects = {
@@ -17,7 +17,7 @@
 					'/cue_tracker/ct_version_check.php': 'https://orca-music.com/cue_tracker/changelog.html'
 				};
 				var url = redirects[location.pathname];
-				if (typeof url !== 'undefined') location.href = url + location.search || '';
+				if (typeof url !== 'undefined') location.href = url + location.search;
 			})();
 		</script>
 
