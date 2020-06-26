@@ -1,3 +1,4 @@
+"use strict";
 /*
  * CUE TRACKER VERSION CHECK
  *
@@ -51,7 +52,7 @@
 	 */
 	function show(elem) {
 		document.querySelectorAll(elem).forEach(el => {
-			el.style.display = "block"
+			el.style.display = "block";
 		});
 	}
 
@@ -63,7 +64,7 @@
 	 */
 	function setText(elem, text) {
 		document.querySelectorAll(elem).forEach(el => {
-			el.textContent = text
+			el.textContent = text;
 		});
 	}
 
@@ -75,7 +76,7 @@
 	 */
 	function setHtml(elem, html) {
 		document.querySelectorAll(elem).forEach(el => {
-			el.innerHTML = html
+			el.innerHTML = html;
 		});
 	}
 
@@ -88,7 +89,7 @@
 	 */
 	function setAttr(elem, attr, value) {
 		document.querySelectorAll(elem).forEach(el => {
-			el.setAttribute(attr, value)
+			el.setAttribute(attr, value);
 		});
 	}
 
@@ -103,15 +104,14 @@
 		return (changes !== undefined) ?
 			changes.reduce((output, change) => {
 				return output + `<li><span class="badge badge-${index}">${index}</span> ${change}</li>`;
-			}, "") : ""
-		;
+			}, "") : "";
 	}
 
 	/**
 	 * Get a specified URL parameter's value
 	 *
 	 * @param {string} sParam The URL parameter to check
-	 * @return {string|boolean} Parameter's value or false
+	 * @return {string} Parameter's value or empty string
 	 */
 	function GetURLParameter(sParam) {
 		const sPageURL = window.location.search.substring(1);
@@ -122,7 +122,7 @@
 				return value;
 			}
 		}
-		return false;
+		return '';
 	}
 
 	/**
