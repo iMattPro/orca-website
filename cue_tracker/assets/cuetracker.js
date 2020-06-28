@@ -122,7 +122,7 @@
 				return value;
 			}
 		}
-		return '';
+		return "";
 	}
 
 	/**
@@ -146,8 +146,8 @@
 	 */
 	function versionCompare(v1, v2, options = {}) {
 		const {lexicographical = false, zeroExtend = true} = options;
-		let v1parts = (v1 || "0").split('.'),
-			v2parts = (v2 || "0").split('.');
+		let v1parts = (v1 || "0").split("."),
+			v2parts = (v2 || "0").split(".");
 
 		function isValidPart(x) {
 			return (lexicographical ? /^\d+[A-Za-zαß]*$/ : /^\d+[A-Za-zαß]?$/).test(x);
