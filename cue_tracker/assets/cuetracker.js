@@ -7,19 +7,19 @@
 (function(document, window) {
 	let uVersion = GetURLParameter("version");
 
-	fetch("changelog.json").then(function (response) {
+	fetch("changelog.json").then((response) => {
 		// The API call was successful!
 		if (response.ok) {
 			return response.json();
 		} else {
 			return Promise.reject(response);
 		}
-	}).then(function (data) {
+	}).then((data) => {
 		// This is the JSON from our response
 		let changes = [];
 		const {revision} = data;
 		const [{version: releaseVersion, link: releaseLink}] = revision;
-		revision.forEach(function({version, date, log}) {
+		revision.forEach(({version, date, log}) => {
 			if (versionCompare(uVersion, version) < 0) {
 				let list = `<li><h2>${version} <span class="date">[ ${date} ]</span></h2></li>`;
 				for (let [key, value] of Object.entries(log)) {
@@ -40,7 +40,7 @@
 		} else {
 			show("#up-to-date");
 		}
-	}).catch(function (err) {
+	}).catch((err) => {
 		// There was an error
 		console.warn("Something went wrong.", err);
 	});
