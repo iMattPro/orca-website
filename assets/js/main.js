@@ -1,5 +1,5 @@
 (function($) {
-	$(document).ready(function() {
+	$(function() {
 		// Initialize jCarousel
 		var jcarousel = $(".jcarousel").jcarousel({
 			wrap: "circular"
