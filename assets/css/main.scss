@@ -1,0 +1,20 @@
+// Variables for my own theme
+$primary: #8dd1ff;
+$dark: #1d1f23;
+$body-bg: #33363B;
+$body-color: #dddddd;
+$font-family-base: Nunito, Helvetica, Arial, sans-serif;
+$link-hover-decoration: none;
+$badge-padding-x: .6em;
+$tooltip-bg: #ffffff;
+$tooltip-color: #000000;
+$tooltip-opacity: 0.7;
+$input-border-radius: 0;
+$input-border-radius-lg: 0;
+$input-border-radius-sm: 0;
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "style";
