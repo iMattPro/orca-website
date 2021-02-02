@@ -61,6 +61,19 @@ footer {
 .facebook { background-position: -60% 0 }
 .soundcloud { background-position: 0 0 }
 
+.headshot {
+	width: 80px;
+	height: 90px;
+	vertical-align: bottom;
+}
+
+.iatse {
+	height: auto;
+	max-width: 30px;
+	margin: 0;
+	padding: 0;
+}
+
 // jCarousel theme configuration variables
 $jc-color: #24262c;
 $jc-height: 180px;
