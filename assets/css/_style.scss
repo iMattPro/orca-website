@@ -43,7 +43,11 @@ $socialSize: 64px;
 	width: $socialSize / 2;
 	font-size: $socialSize / 4;
 	margin: 2px;
-  }
+}
+
+.social-mini:hover {
+	color: #ffffff;
+}
 
 .twitter { background-color: hsl(203, 89%, 53%); }
 .facebook { background-color: hsl(220, 46%, 48%);}
