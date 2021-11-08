@@ -25,41 +25,33 @@ footer {
 	margin-bottom: 20px;
 }
 
-.ir {
-	background-color: transparent;
-	border: 0;
-	overflow: hidden;
-}
-
-.ir:before {
-	content: "";
-	display: block;
-	width: 0;
-	height: 150%;
-}
-
+$socialSize: 64px;
 .social {
-	background-image: url("../img/social-links-retina.png");
-	background-size: 384px 64px;
-	width: 64px;
-	height: 64px;
-	display: block;
 	margin: 5px auto;
+	height: $socialSize;
+	width: $socialSize;
+	border-radius: 50%;
+	display: flex;
+	font-size: $socialSize / 2;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
 }
 
 .social-mini {
-	background-size: 192px 32px;
-	width: 32px;
-	height: 32px;
+	height: $socialSize / 2;
+	width: $socialSize / 2;
+	font-size: $socialSize / 4;
 	margin: 2px;
-}
+  }
 
-.imdb { background-position: -80% 0 }
-.email { background-position: -40% 0 }
-.github { background-position: -20% 0 }
-.linkedin { background-position: -100% 0 }
-.facebook { background-position: -60% 0 }
-.soundcloud { background-position: 0 0 }
+.twitter { background-color: hsl(203, 89%, 53%); }
+.facebook { background-color: hsl(220, 46%, 48%);}
+.linkedin { background-color: hsl(201, 100%, 35%); }
+.soundcloud { background-color: hsl(28, 100%, 50%); }
+.imdb { background-color: hsl(45, 95%, 44%); }
+.github { background-color: hsl(0, 3%, 33%); }
+.email { background-color: hsl(139, 48%, 34%); }
 
 .headshot {
 	width: 80px;
