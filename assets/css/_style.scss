@@ -25,6 +25,7 @@ footer {
 	margin-bottom: 20px;
 }
 
+// social icons
 $socialSize: 64px;
 .social {
 	margin: 5px auto;
@@ -36,6 +37,7 @@ $socialSize: 64px;
 	color: #ffffff;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 .social-mini {
@@ -53,13 +55,14 @@ $socialSize: 64px;
 .facebook { background-color: hsl(220, 46%, 48%);}
 .linkedin { background-color: hsl(201, 100%, 35%); }
 .soundcloud { background-color: hsl(28, 100%, 50%); }
-.imdb { background-color: hsl(45, 95%, 44%); font-size: 2.5rem; }
 .github { background-color: hsl(0, 3%, 33%); }
 .email { background-color: hsl(139, 48%, 34%); }
 
-.social-mini.imdb {
-	color: black;
-}
+// imdb button is a special case
+.imdb { background-color: #ffffff; color: hsl(45, 95%, 44%); }
+.social.imdb { font-size: 5rem; }
+.social-mini.imdb { font-size: 2.5rem; }
+.social-mini.imdb:hover { color: hsl(45, 95%, 44%) }
 
 .headshot {
 	width: 80px;
