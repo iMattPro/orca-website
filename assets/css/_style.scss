@@ -46,7 +46,7 @@ $socialSize: 64px;
 	width: $socialSize;
 	border-radius: 50%;
 	display: flex;
-	font-size: $socialSize / 2;
+	font-size: $socialSize * 0.5;
 	color: #ffffff;
 	justify-content: center;
 	align-items: center;
@@ -54,9 +54,9 @@ $socialSize: 64px;
 }
 
 .social-mini {
-	height: $socialSize / 2;
-	width: $socialSize / 2;
-	font-size: $socialSize / 4;
+	height: $socialSize * 0.5;
+	width: $socialSize * 0.5;
+	font-size: $socialSize * 0.25;
 	margin: 2px;
 }
 
@@ -64,15 +64,36 @@ $socialSize: 64px;
 	color: #ffffff;
 }
 
-.twitter { background-color: hsl(203, 89%, 53%); }
-.facebook { background-color: hsl(220, 46%, 48%);}
-.linkedin { background-color: hsl(201, 100%, 35%); }
-.soundcloud { background-color: hsl(28, 100%, 50%); }
-.github { background-color: hsl(0, 3%, 33%); }
-.email { background-color: hsl(139, 48%, 34%); }
+.twitter {
+	background-color: hsl(203, 89%, 53%);
+}
+.facebook {
+	background-color: hsl(220, 46%, 48%);
+}
+.linkedin {
+	background-color: hsl(201, 100%, 35%);
+}
+.soundcloud {
+	background-color: hsl(28, 100%, 50%);
+}
+.github {
+	background-color: hsl(0, 3%, 33%);
+}
+.email {
+	background-color: hsl(139, 48%, 34%);
+}
 
 // imdb button is a special case
-.imdb { background-color: #ffffff; color: hsl(45, 95%, 44%); }
-.social.imdb { font-size: 5rem; }
-.social-mini.imdb { font-size: 2.5rem; }
-.social-mini.imdb:hover { color: hsl(45, 95%, 44%) }
+.imdb {
+	background-color: #000000;
+	color: hsl(45, 95%, 44%);
+}
+.social.imdb {
+	font-size: $socialSize * 1.25;
+}
+.social-mini.imdb {
+	font-size: $socialSize * 0.625;
+}
+.social-mini.imdb:hover {
+	color: hsl(45, 95%, 44%);
+}

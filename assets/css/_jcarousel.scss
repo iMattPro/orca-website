@@ -11,7 +11,7 @@ $jc-txt-shadow: 0 0 1px #000;
 $jc-control-size: 30px;
 $jc-control-bg: #4E443C;
 $jc-control-color: #ffffff;
-$jc-control-pos: ($jc-height - $jc-control-size - ($jc-y-buffer * 2)) / 2;
+$jc-control-pos: ($jc-height - $jc-control-size - ($jc-y-buffer * 2)) * 0.5;
 
 /** jCarousel **/
 .jcarousel-wrapper {
