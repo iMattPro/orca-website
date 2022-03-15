@@ -1,6 +1,6 @@
 body {
 	padding-top: 40px;
-	text-shadow: 1px 1px 5px #000000;
+	text-shadow: 1px 1px 5px $black;
 }
 
 footer {
@@ -20,8 +20,8 @@ footer {
 .separator {
 	height: 0;
 	line-height: 0;
-	border-bottom: 1px solid #1e2024;
-	box-shadow: 0 1px 0 #45484c;
+	border-bottom: 1px solid $dark;
+	box-shadow: 0 1px 0 lighten($dark, 16);
 	margin-bottom: 20px;
 }
 
@@ -47,21 +47,19 @@ $socialSize: 64px;
 	border-radius: 50%;
 	display: flex;
 	font-size: $socialSize * 0.5;
-	color: #ffffff;
+	color: $white;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-}
-
-.social-mini {
-	height: $socialSize * 0.5;
-	width: $socialSize * 0.5;
-	font-size: $socialSize * 0.25;
-	margin: 2px;
-}
-
-.social-mini:hover {
-	color: #ffffff;
+	&-mini {
+		height: $socialSize * 0.5;
+		width: $socialSize * 0.5;
+		font-size: $socialSize * 0.25;
+		margin: 2px;
+		&:hover {
+			color: $white;
+		}
+	}
 }
 
 .twitter {
@@ -85,7 +83,7 @@ $socialSize: 64px;
 
 // imdb button is a special case
 .imdb {
-	background-color: #000000;
+	background-color: $black;
 	color: hsl(45, 95%, 44%);
 }
 .social.imdb {

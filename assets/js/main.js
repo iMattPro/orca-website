@@ -6,7 +6,7 @@
 		});
 
 		// Initialize jCarousel Nav Buttons
-		$(".jcarousel-control-prev")
+		$(".jcarousel-prev")
 			.on("jcarouselcontrol:active", function() {
 				$(this).removeClass("inactive");
 			})
@@ -17,7 +17,7 @@
 				target: "-=8"
 			});
 
-		$(".jcarousel-control-next")
+		$(".jcarousel-next")
 			.on("jcarouselcontrol:active", function() {
 				$(this).removeClass("inactive");
 			})
