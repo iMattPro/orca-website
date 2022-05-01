@@ -34,7 +34,7 @@
 			var html = "<ul>";
 
 			$.each(data, function(title, url) {
-				html += "<li><img src=\"assets/posters/" + url + "\" class=\"border border-secondary\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"" + title + "\" alt=\"\" width=\"94\" height=\"140\" /></li>";
+				html += "<li><img src=\"assets/posters/" + url + "\" class=\"border border-secondary\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"" + title + "\" alt=\"\" width=\"94\" height=\"140\" loading=\"lazy\"></li>";
 			});
 
 			html += "</ul>";
