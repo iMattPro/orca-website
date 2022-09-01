@@ -52,7 +52,7 @@
 		};
 
 		// AJAX load poster JSON data
-		$.getJSON("assets/posters/poster_images.json", setup);
+		$.getJSON("assets/poster_images.json", setup);
 
 		// Pause autoscrolling if the user moves with the cursor over the clip.
 		jcarousel.on("mouseenter", function() {
