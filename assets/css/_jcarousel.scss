@@ -20,7 +20,7 @@ $jc-control-pos: ($jc-height - $jc-control-size - ($jc-y-buffer * 2)) * 0.5;
 	border: $jc-y-buffer solid $jc-color;
 	width: $jc-width;
 	height: $jc-height;
-	margin-bottom: 2rem;
+	// margin-bottom: 2rem;
 	padding: $jc-y-buffer $jc-x-buffer;
 }
 
