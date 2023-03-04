@@ -26,9 +26,11 @@ footer {
 }
 
 .headshot {
-	width: 80px;
+	width: 78px;
 	height: 90px;
 	vertical-align: bottom;
+	border: solid 2px $body-color;
+	border-radius: 3px;
 }
 
 .iatse {
