@@ -99,8 +99,10 @@ $socialSize: 64px;
 }
 
 iframe {
-	width: 720px;
-	height: 405px; 
+	aspect-ratio: 16 / 9;
+  	width: 100%;
+	max-width: 720px;
+	max-height: 405px; 
 	border: solid 4px $body-bg; 
 	border-radius: 5px;
 }
